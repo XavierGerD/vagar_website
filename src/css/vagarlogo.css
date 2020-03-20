@@ -1,0 +1,11 @@
+.vagar-logo-image {
+	height: 50px;
+	width: 50px;
+}
+
+.vagar-logo-container {
+	padding: 15px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+}
