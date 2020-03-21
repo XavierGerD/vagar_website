@@ -1,0 +1,17 @@
+.content-box {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 1000px;
+	margin-top: 75px;
+	color: white;
+	padding: 50px;
+	border-radius: 5px;
+	font-family: "Baloo 2";
+}
+
+.content-box:last-of-type {
+	margin-bottom: 75px;
+}
+
+.text-body {
+	line-height: 30px;
+}

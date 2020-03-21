@@ -1,0 +1,22 @@
+{
+	"music": {
+		"title": "Our music",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices non ipsum eu molestie. Praesent consequat metus ut magna molestie tempor. Nullam et semper urna. Sed suscipit quis purus sit amet elementum. Duis suscipit magna elementum, mollis diam pretium, dapibus tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sodales nunc nec nisi dictum placerat. Nullam pharetra erat id tortor ullamcorper convallis sed sed orci. Ut pellentesque quam mi, vel suscipit mi tincidunt a. Integer quis posuere arcu. Quisque arcu ligula, ullamcorper vitae bibendum non, iaculis id eros. Vestibulum diam ipsum, maximus in metus id, rhoncus iaculis ante."
+	},
+	"shows": {
+		"title": "Our next show!",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices non ipsum eu molestie. Praesent consequat metus ut magna molestie tempor. Nullam et semper urna. Sed suscipit quis purus sit amet elementum. Duis suscipit magna elementum, mollis diam pretium, dapibus tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sodales nunc nec nisi dictum placerat. Nullam pharetra erat id tortor ullamcorper convallis sed sed orci. Ut pellentesque quam mi, vel suscipit mi tincidunt a. Integer quis posuere arcu. Quisque arcu ligula, ullamcorper vitae bibendum non, iaculis id eros. Vestibulum diam ipsum, maximus in metus id, rhoncus iaculis ante."
+	},
+	"media": {
+		"title": "Our next show!",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices non ipsum eu molestie. Praesent consequat metus ut magna molestie tempor. Nullam et semper urna. Sed suscipit quis purus sit amet elementum. Duis suscipit magna elementum, mollis diam pretium, dapibus tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sodales nunc nec nisi dictum placerat. Nullam pharetra erat id tortor ullamcorper convallis sed sed orci. Ut pellentesque quam mi, vel suscipit mi tincidunt a. Integer quis posuere arcu. Quisque arcu ligula, ullamcorper vitae bibendum non, iaculis id eros. Vestibulum diam ipsum, maximus in metus id, rhoncus iaculis ante."
+	},
+	"otherthing": {
+		"title": "Our next show!",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices non ipsum eu molestie. Praesent consequat metus ut magna molestie tempor. Nullam et semper urna. Sed suscipit quis purus sit amet elementum. Duis suscipit magna elementum, mollis diam pretium, dapibus tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sodales nunc nec nisi dictum placerat. Nullam pharetra erat id tortor ullamcorper convallis sed sed orci. Ut pellentesque quam mi, vel suscipit mi tincidunt a. Integer quis posuere arcu. Quisque arcu ligula, ullamcorper vitae bibendum non, iaculis id eros. Vestibulum diam ipsum, maximus in metus id, rhoncus iaculis ante."
+	},
+	"newthing": {
+		"title": "Our next show!",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices non ipsum eu molestie. Praesent consequat metus ut magna molestie tempor. Nullam et semper urna. Sed suscipit quis purus sit amet elementum. Duis suscipit magna elementum, mollis diam pretium, dapibus tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sodales nunc nec nisi dictum placerat. Nullam pharetra erat id tortor ullamcorper convallis sed sed orci. Ut pellentesque quam mi, vel suscipit mi tincidunt a. Integer quis posuere arcu. Quisque arcu ligula, ullamcorper vitae bibendum non, iaculis id eros. Vestibulum diam ipsum, maximus in metus id, rhoncus iaculis ante."
+	}
+}
