@@ -14,6 +14,7 @@ export default class Content extends Component {
 							title={key.title}
 							text={key.text}
 							index={i}
+							key={key.title}
 						/>
 					);
 				})}

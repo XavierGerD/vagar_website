@@ -4,7 +4,9 @@
 	background-image: url("/album_cover_bg.png");
 	min-height: 100%;
 	min-width: 100%;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 100vh;
 
 	position: fixed;
@@ -23,5 +25,10 @@
 	top: 295px;
 	height: 100px;
 	width: 100%;
-	mask-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
+}
+
+canvas {
+	display: block;
+	z-index: -1000;
+	pointer-events: none;
 }
