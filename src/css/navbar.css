@@ -12,9 +12,9 @@
 
 .menu-item {
 	color: white;
-	font-family: "Baloo 2";
+	font-family: "Baloo";
 	font-size: 25px;
 	padding: 15px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
+	/* -webkit-user-select: none;
+	-moz-user-select: none; */
 }

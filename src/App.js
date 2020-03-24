@@ -9,7 +9,7 @@ function App() {
 		<div className="App">
 			<NavBar />
 			<div style={{ height: "150px" }} />
-			<Content />
+			{/* <Content /> */}
 			<ThreeDeeLogo />
 		</div>
 	);

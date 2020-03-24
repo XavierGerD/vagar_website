@@ -1,4 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Baloo+2:500,700&display=swap");
+@font-face {
+	font-family: "Baloo";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: local("Baloo 2 Medium"), local("Baloo2-Medium"),
+		url(https://fonts.gstatic.com/s/baloo2/v1/wXKuE3kTposypRyd76v_FeMKmA.woff2)
+			format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+		U+2215, U+FEFF, U+FFFD;
+}
 
 .App {
 	background-image: url("/album_cover_bg.png");
@@ -29,6 +40,6 @@
 
 canvas {
 	display: block;
-	z-index: -1000;
+	/* z-index: -1000; */
 	pointer-events: none;
 }

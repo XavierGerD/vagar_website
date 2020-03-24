@@ -1,0 +1,26 @@
+{
+	"image1": {
+		"title": "This is a photo",
+		"image": "some_reference.jpg"
+	},
+	"image2": {
+		"title": "Druid.jpg",
+		"image": "some_reference.jpg"
+	},
+	"image3": {
+		"title": "druid_in_the_forest.jpg",
+		"image": "some_reference.jpg"
+	},
+	"image4": {
+		"title": "druid_in_the_forest.jpg",
+		"image": "some_reference.jpg"
+	},
+	"image5": {
+		"title": "druid_in_the_forest.jpg",
+		"image": "some_reference.jpg"
+	},
+	"image6": {
+		"title": "druid_in_the_forest.jpg",
+		"image": "some_reference.jpg"
+	}
+}
