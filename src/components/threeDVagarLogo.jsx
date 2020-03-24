@@ -138,6 +138,7 @@ let tweens = {
 };
 
 const maxAnisotropy = renderer.capabilities.getMaxAnisotropy();
+let font = undefined;
 
 export default class ThreeDeeLogo extends Component {
 	constructor(props) {
@@ -154,8 +155,20 @@ export default class ThreeDeeLogo extends Component {
 		renderer.id = "canvas";
 		document.body.insertBefore(renderer.domElement, root);
 		this.loadLogo()
+			.then(() => {
+				font = new FontFace(
+					"Baloo",
+					"url(https://fonts.gstatic.com/s/baloo2/v1/wXKuE3kTposypRyd76v_FeMKmA.woff2)"
+				);
+				font.load();
+				document.fonts.add(font);
+				document.body.classList.add("fonts-loaded");
+			})
 			.then(() => this.setup())
-			.then(() => this.loadNews())
+			.then(() => {
+				console.log(font);
+				this.loadNews();
+			})
 			.then(() => loadClouds(scene, cloudParticles))
 			.then(() => {
 				tweens.resetLogo();
