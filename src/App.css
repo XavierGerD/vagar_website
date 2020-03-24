@@ -40,6 +40,7 @@
 
 canvas {
 	display: block;
-	/* z-index: -1000; */
+	z-index: -10;
+	position: relative;
 	pointer-events: none;
 }
