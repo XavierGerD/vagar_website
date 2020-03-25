@@ -21,13 +21,13 @@ export const loadClouds = (scene, cloudParticles) => {
 					for (let i = 0; i < 50; i++) {
 						let cloud = new Three.Mesh(cloudGeo, cloudMaterial);
 						cloud.position.set(
-							Math.random() * 800 - 400,
-							-175,
-							Math.random() * 500 - 500
+							Math.random() * 1000 - 500,
+							-330,
+							Math.random() * 100 - 500
 						);
-						cloud.scale.set(0.1, 0.1, 0.1);
+						cloud.scale.set(0.2, 0.2, 0.2);
 						cloud.rotation.x = -0.1;
-						cloud.material.opacity = 0.2;
+						cloud.material.opacity = 0.1;
 						cloud.direction = Math.round(Math.random()) * 2 - 1;
 						cloud.speed =
 							Math.random() * 0.001 - 0.0005 * cloud.direction;

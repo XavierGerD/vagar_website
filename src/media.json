@@ -1,26 +1,26 @@
 {
 	"image1": {
 		"title": "This is a photo",
-		"image": "some_reference.jpg"
+		"image": "/album_cover_final_color_ small.jpg"
 	},
 	"image2": {
 		"title": "Druid.jpg",
-		"image": "some_reference.jpg"
+		"image": "/druid02.jpg"
 	},
 	"image3": {
 		"title": "druid_in_the_forest.jpg",
-		"image": "some_reference.jpg"
+		"image": "/druids03.png"
 	},
 	"image4": {
 		"title": "druid_in_the_forest.jpg",
-		"image": "some_reference.jpg"
+		"image": "/druids04.jpg"
 	},
 	"image5": {
 		"title": "druid_in_the_forest.jpg",
-		"image": "some_reference.jpg"
+		"image": "/druid01.jpg"
 	},
 	"image6": {
 		"title": "druid_in_the_forest.jpg",
-		"image": "some_reference.jpg"
+		"image": "/druid02.jpg"
 	}
 }

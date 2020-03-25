@@ -1,6 +1,18 @@
 import * as Three from "three";
+import { getFont } from "./utils.js";
 
-export const createMeshWithCanvasTexture = (
+const getImage = async (image, ctx) => {
+	return new Promise((resolve, reject) => {
+		const img = new Image();
+		img.src = image;
+		img.onload = function() {
+			resolve();
+			ctx.drawImage(img, 0, 0, img.width, img.width, 40, 40, 420, 420);
+		};
+	});
+};
+
+export const createMeshWithCanvasTexture = async (
 	title,
 	text,
 	maxAnisotropy,
@@ -16,11 +28,13 @@ export const createMeshWithCanvasTexture = (
 	ctx.rect(0, 0, textCanvas.width, textCanvas.height);
 	ctx.fillStyle = "rgba(0, 0, 0, 0.8)";
 	ctx.fill();
-	ctx.font = "50px Baloo";
-	ctx.fillStyle = "white";
-	ctx.fillText(title, 60, 70);
+
+	if (text) await getFont();
 
 	if (text) {
+		ctx.font = "50px Baloo";
+		ctx.fillStyle = "white";
+		ctx.fillText(title, 60, 70);
 		ctx.font = "25px Baloo";
 		const lines = getWrappedText(text, ctx, 900);
 		lines.forEach((line, i) => {
@@ -29,12 +43,7 @@ export const createMeshWithCanvasTexture = (
 	}
 
 	if (image) {
-		const img = new Image();
-		img.onload = function() {
-			var ctx = document.getElementById("ctx").getContext("2d");
-			ctx.drawImage(img, 0, 0);
-		};
-		img.src = image;
+		await getImage(image, ctx);
 	}
 
 	const texture = new Three.CanvasTexture(textCanvas);
@@ -49,6 +58,7 @@ export const createMeshWithCanvasTexture = (
 	blctx.rect(0, 0, blackCanvas.width, blackCanvas.height);
 	blctx.fillStyle = "rgba(0, 0, 0, 0.8)";
 	blctx.fill();
+
 	const black = new Three.CanvasTexture(blackCanvas);
 
 	const material = [
@@ -61,8 +71,6 @@ export const createMeshWithCanvasTexture = (
 	];
 	material.needsUpdate = true;
 	const geometry = new Three.BoxGeometry(width / 100, height / 100, 0.5);
-	geometry.computeBoundingBox();
-	geometry.center();
 	const mesh = new Three.Mesh(geometry, material);
 	return mesh;
 };
@@ -82,7 +90,12 @@ const getWrappedText = (text, ctx, maxWidth) => {
 	return lines;
 };
 
-export const createContentBlocks = (content, maxAnisotropy, width, height) => {
+export const createContentBlocks = async (
+	content,
+	maxAnisotropy,
+	width,
+	height
+) => {
 	const keys = Object.keys(content);
 	const meshes = keys.map(key => {
 		return createMeshWithCanvasTexture(
@@ -94,5 +107,6 @@ export const createContentBlocks = (content, maxAnisotropy, width, height) => {
 			height
 		);
 	});
-	return meshes;
+	const ret = await Promise.all(meshes);
+	return ret;
 };

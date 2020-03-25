@@ -2,15 +2,15 @@ import React from "react";
 import "./App.css";
 import NavBar from "./components/navbar";
 import Content from "./components/content";
-import ThreeDeeLogo from "./components/threeDVagarLogo";
+import ThreeDee from "./components/threeDVagarLogo";
 
 function App() {
 	return (
 		<div className="App">
-			<NavBar />
+			{/* <NavBar /> */}
 			<div style={{ height: "150px" }} />
 			{/* <Content /> */}
-			<ThreeDeeLogo />
+			<ThreeDee />
 		</div>
 	);
 }
